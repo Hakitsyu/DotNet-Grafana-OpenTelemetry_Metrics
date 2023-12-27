@@ -1,0 +1,42 @@
+version: '3.7'
+
+services:
+  app:
+    container_name: app
+    build:
+      dockerfile: './Dockerfile'
+    restart: unless-stopped
+    ports:
+      - 5000:80
+    networks:
+      - metrics
+
+  prometheus:
+    container_name: prometheus
+    image: prom/prometheus:latest
+    restart: unless-stopped
+    ports:
+      - 9090:9090
+    volumes:
+      - ./prometheus:/etc/prometheus
+      - prometheus_data:/prometheus
+    networks:
+      - metrics
+
+  grafana:
+    container_name: grafana
+    image: grafana/grafana-enterprise
+    restart: unless-stopped
+    ports:
+      - 3000:3000
+    volumes:
+      - ./grafana:/etc/grafana/provisioning/datasources
+    networks:
+      - metrics
+
+volumes:
+  prometheus_data:
+
+networks:
+  metrics:
+    driver: bridge

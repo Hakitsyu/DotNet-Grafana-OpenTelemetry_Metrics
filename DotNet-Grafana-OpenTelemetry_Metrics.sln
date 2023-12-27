@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33801.468
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNet-Grafana-OpenTelemetry_Metrics", "DotNet-Grafana-OpenTelemetry_Metrics\DotNet-Grafana-OpenTelemetry_Metrics.csproj", "{D96D6C33-2681-413A-A72A-368266ADAEC7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D96D6C33-2681-413A-A72A-368266ADAEC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D96D6C33-2681-413A-A72A-368266ADAEC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D96D6C33-2681-413A-A72A-368266ADAEC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D96D6C33-2681-413A-A72A-368266ADAEC7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CC441F9D-17AD-4EB4-8B56-70A9188A27B6}
+	EndGlobalSection
+EndGlobal
